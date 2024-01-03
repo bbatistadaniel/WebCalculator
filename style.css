@@ -1,0 +1,138 @@
+/*Importing Font Family*/
+@font-face {
+    font-family: "Alcubierre";
+    src: url("assets/fonts/Alcubierre.otf");
+}
+
+/*Removing default margin and padding from everything*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Setting page background color*/
+body{background-color: #303d63;}
+
+/*Id "#main" Static Style*/
+#main{
+    display: grid;
+    grid-template-rows: 100, 100, 100, 100, 100;
+    grid-template-columns: 100, 100, 100, 100;
+    width: min-content;
+    height: min-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5670bd;
+    padding: 20px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+/*Id "#display" Static Style*/
+#display{
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 6px;
+    background-color: #2e53c2;
+    height: 67px;
+    font-family: "Alcubierre";
+    font-size: 60px;
+    text-align: right;
+    border-radius: 10px;
+    width: 300px;
+    color: #FFF;
+}
+
+/*Id "#display" Selection Style*/
+#display::selection{
+    background-color: #ffffff4d;
+    color: #000000;
+}
+
+/*Button Styling*/
+    /*Class ".item" style*/
+    .item{
+        justify-self: center;
+        margin-top: 10px;
+    }
+
+    /*Buttons Static Style*/
+    button{
+        border-radius: 100px;
+        border-width: 0;
+        width: 70px;
+        height: 70px;
+        margin: 2px;
+        text-align: center;
+        font-size: 50px;
+        font-family: "Alcubierre";
+        background-color: hsl(208, 100%, 90%);
+        user-select: none;
+    }
+
+    .operator button{background-color: hsl(49,100%,50%);}
+    #C button{background-color: hsl(0,73%,63%);}
+
+    /*Buttons Hover Style*/
+    button:hover{background-color: hsl(208,100%,95%)}
+    #C button:hover{background-color: hsl(0,73%,68%);}
+    .operator button:hover{background-color: hsl(49,100%,65%);}
+
+    /*Buttons Active Style*/
+    button:active{background-color: hsl(208,100%,80%)}
+    #C button:active{background-color: hsl(0, 65%, 43%);}
+    .operator button:active{background-color: hsl(49,100%,40%);}
+
+/*Keypad*/
+    /*Row 1*/
+    #7{grid-area:2 / 1 / 3 / 2 ;}
+    #8{grid-area:2 / 2 / 3 / 3 ;}
+    #9{grid-area:2 / 4 / 3 / 5 ;}
+    #plus{grid-area:2 / 4 / 3 / 5 ;}
+
+    /*Row 2*/
+    #4{grid-area:3 / 1 / 4 / 2 ;}
+    #5{grid-area:3 / 2 / 4 / 3 ;}
+    #6{grid-area:3 / 3 / 4 / 4 ;}
+    #-{grid-area:3 / 4 / 4 / 5 ;}
+
+    /*Row 3*/
+    #1{grid-area:4 / 1 / 5 / 2 ;}
+    #2{grid-area:4 / 2 / 5 / 3 ;}
+    #3{grid-area:4 / 3 / 5 / 4 ;}
+    #ast{grid-area:4 / 4 / 5 / 5 ;}
+
+    /*Row 4*/
+    #C{grid-area:5 / 1 / 6 / 2 ;}
+    #0{grid-area:5 / 2 / 6 / 3 ;}
+    #dot{grid-area:5 / 3 / 6 / 4 ;}
+    #divi{grid-area:5 / 4 / 6 / 5 ;}
+
+    /*Row 5*/
+    #equal{grid-area:6 / 4 / 7 / 5 ;}
+
+/*Credits*/
+    /*Credits Link*/
+    #credits a{
+        text-decoration: none;
+        cursor: default;
+        color: white;
+        font-family: "Alcubierre";
+        font-size: 20px;
+        user-select: none;
+    }
+
+    /*Credits Div*/
+    #credits{
+        grid-area: 6 / 1 / 7 / 4;
+        width: 210;
+        height: 70;
+        text-align: center;
+        align-self: center;
+    }

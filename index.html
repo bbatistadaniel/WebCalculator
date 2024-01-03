@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Calculator</title>
+    <link rel="shortcut icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Calculator Display -->
+        <div class="item" id="display"></div>
+
+        <!-- Calculator Buttons -->
+        <div class="item" id="7">
+            <button onclick="addChar('7')">7</button>
+        </div>
+        <div class="item" id="8">
+            <button onclick="addChar('8')">8</button>
+        </div>
+        <div class="item" id="9">
+            <button onclick="addChar('9')">9</button>
+        </div>
+        <div class="item operator" id="plus">
+            <button onclick="addChar('+')">+</button>
+        </div>
+
+        <div class="item" id="4">
+            <button onclick="addChar('4')">4</button>
+        </div>
+        <div class="item" id="5">
+            <button onclick="addChar('5')">5</button>
+        </div>
+        <div class="item" id="6">
+            <button onclick="addChar('6')">6</button>
+        </div>
+        <div class="item operator" id="-">
+            <button onclick="addChar('-')">-</button>
+        </div>
+
+        <div class="item" id="1">
+            <button onclick="addChar('1')">1</button>
+        </div>
+        <div class="item" id="2">
+            <button onclick="addChar('2')">2</button>
+        </div>
+        <div class="item" id="3">
+            <button onclick="addChar('3')">3</button>
+        </div>
+        <div class="item operator" id="ast">
+            <button onclick="addChar('*')">*</button>
+        </div>
+
+        <div class="item" id="C">
+            <button onclick="clearDisplay()">C</button>
+        </div>
+        <div class="item" id="0">
+            <button onclick="addChar('0')">0</button>
+        </div>
+        <div class="item" id="dot">
+            <button onclick="addChar('.')">.</button>
+        </div>
+        <div class="item operator" id="divi">
+            <button onclick="addChar('/')">/</button>
+        </div>
+
+        <div class="item operator" id="equal">
+            <button onclick="equalize()">=</button>
+        </div>
+
+        <!-- Credits -->
+        <div id="credits"><a href="https://github.com/bbatistadaniel" target="_blank">github.com/bbatistadaniel</a></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
