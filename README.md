@@ -45,3 +45,7 @@ Web Calculator is a simple web application that functions as a calculator. It pr
 ## License
 
 This project is open-source and is available under the [MIT License](LICENSE). Feel free to use and modify the code as needed.
+
+## Testing
+
+To experience this project, you can visit the following link: [Web Calculator](https://bbatistadaniel.github.io/WebCalculator/)
