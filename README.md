@@ -1,3 +1,9 @@
+<h1 align="center">Attention</h1>
+<p align="center">This project will not be updated!</p>
+<br>
+<br>
+<br>
+
 # Web Calculator
 
 Web Calculator is a simple web application that functions as a calculator. It provides a user-friendly interface for performing basic arithmetic operations.
